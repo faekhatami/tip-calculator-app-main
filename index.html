@@ -20,7 +20,7 @@
         <input type="number" id="bill" placeholder="0.00">
       </div>
       <div class="tip-selection">
-        <p>Select tip %</p>
+        <p>Select Tip %</p>
         <div class="tip-buttons">
           <button type="button" class="tip-btn" data-tip="5">5%</button>
           <button type="button" class="tip-btn" data-tip="10">10%</button>
@@ -31,20 +31,20 @@
         </div>
       </div>
       <div class="input-group">
-        <label for="people"></label>
+        <label for="people">Number of People</label>
         <input type="number" id="people" placeholder="1">
       </div>
       <div class="results">
         <div class="result-group">
-          <p>Tip Amount <span>/ person</span></p>
+          <p>Tip Amount <br><span>/ person</span></p>
           <h2 id="tip-amount">$0.00</h2>
         </div>
         <div class="result-group">
-          <p>Total <span>/ person</span></p>
+          <p>Total <br><span>/ person</span></p>
           <h2 id="total-amount">$0.00</h2>
         </div>
+        <button type="reset" id="reset-btn">RESET</button>
       </div>
-      <button type="reset" id="reset-btn">RESET</button>
     </form>
   </main>
   <script src="./script.js"></script>

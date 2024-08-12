@@ -1,1 +1,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --Strong-cyan: hsl(172, 67%, 45%);
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: var(--Light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--Very-dark-cyan);
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+header {
+    font-size: 12px;
+    letter-spacing: 8px;
+    opacity: 0.8;
+    margin: 30px 0;
+}
+
+form {
+    background-color: var(--White);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 30px;
+}
+
+.input-group label,
+.tip-selection p {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--Dark-grayish-cyan);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid var(--Very-light-grayish-cyan);
+    background-color: var(--Very-light-grayish-cyan);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#bill {
+    text-align: end;
+    color: var(--Very-dark-cyan);
+    font-weight: 700;
+    font-size: 24px;
+    background-image: url(./images/icon-dollar.svg);
+    background-position: left 5% center;
+    background-repeat: no-repeat;
+}
+
+#people {
+    text-align: end;
+    color: var(--Very-dark-cyan);
+    font-weight: 700;
+    font-size: 24px;
+    background-image: url(./images/icon-person.svg);
+    background-position: left 5% center;
+    background-repeat: no-repeat;
+}
+
+.tip-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 0px;
+}
+
+.tip-btn {
+    background-color: var(--Very-dark-cyan);
+    border: 2px solid var(--Very-dark-cyan);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 24px;
+    color: var(--White);
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+}
+
+.active {
+    background-color: var(--Strong-cyan);
+    border: 2px solid var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+}
+
+#custom-tip {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid var(--Very-light-grayish-cyan);
+    background-color: var(--Very-light-grayish-cyan);
+    border-radius: 5px;
+    color: var(--Very-dark-cyan);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#custom-tip::placeholder {
+    color: var(--Very-dark-cyan);
+    text-align: end;
+    opacity: 0.7;
+    font-size: 22px;
+}
+
+.results {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.result-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.result-group p {
+    color: var(--White);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.result-group span {
+    color: var(--Grayish-cyan);
+}
+
+.result-group h2 {
+    color: var(--Strong-cyan);
+    font-size: 28px;
+}
+
+.results button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--Strong-cyan);
+    font-size: 18px;
+    color: var(--Very-dark-cyan);
+    border: 2px solid var(--Strong-cyan);
+    font-weight: 700;
+}
