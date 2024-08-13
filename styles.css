@@ -168,3 +168,42 @@ form {
     border: 2px solid var(--Strong-cyan);
     font-weight: 700;
 }
+
+@media (min-width: 376px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        max-width: 900px;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 20px;
+    }
+
+    .inputs {
+        padding: 20px;
+    }
+
+    .tip-buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .tip-btn {
+        font-size: 20px;
+    }
+
+    #custom-tip::placeholder {
+        font-size: 16px;
+    }
+
+    .results {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+    }

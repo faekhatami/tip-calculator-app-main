@@ -15,33 +15,37 @@
       <h1>SPLI<br>TTER</h1>
     </header>
     <form>
-      <div class="input-group">
-        <label for="bill">Bill</label>
-        <input type="number" id="bill" placeholder="0.00">
-      </div>
-      <div class="tip-selection">
-        <p>Select Tip %</p>
-        <div class="tip-buttons">
-          <button type="button" class="tip-btn" data-tip="5">5%</button>
-          <button type="button" class="tip-btn" data-tip="10">10%</button>
-          <button type="button" class="tip-btn active" data-tip="15">15%</button>
-          <button type="button" class="tip-btn" data-tip="25">25%</button>
-          <button type="button" class="tip-btn" data-tip="50">50%</button>
-          <input type="number" id="custom-tip" placeholder="Custom">
+      <div class="inputs">
+        <div class="input-group">
+          <label for="bill">Bill</label>
+          <input type="number" id="bill" placeholder="0.00">
         </div>
-      </div>
-      <div class="input-group">
-        <label for="people">Number of People</label>
-        <input type="number" id="people" placeholder="1">
+        <div class="tip-selection">
+          <p>Select Tip %</p>
+          <div class="tip-buttons">
+            <button type="button" class="tip-btn" data-tip="5">5%</button>
+            <button type="button" class="tip-btn" data-tip="10">10%</button>
+            <button type="button" class="tip-btn active" data-tip="15">15%</button>
+            <button type="button" class="tip-btn" data-tip="25">25%</button>
+            <button type="button" class="tip-btn" data-tip="50">50%</button>
+            <input type="number" id="custom-tip" placeholder="Custom">
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="people">Number of People</label>
+          <input type="number" id="people" placeholder="1">
+        </div>
       </div>
       <div class="results">
-        <div class="result-group">
-          <p>Tip Amount <br><span>/ person</span></p>
-          <h2 id="tip-amount">$0.00</h2>
-        </div>
-        <div class="result-group">
-          <p>Total <br><span>/ person</span></p>
-          <h2 id="total-amount">$0.00</h2>
+        <div>
+          <div class="result-group">
+            <p>Tip Amount <br><span>/ person</span></p>
+            <h2 id="tip-amount">$0.00</h2>
+          </div>
+          <div class="result-group">
+            <p>Total <br><span>/ person</span></p>
+            <h2 id="total-amount">$0.00</h2>
+          </div>
         </div>
         <button type="reset" id="reset-btn">RESET</button>
       </div>
