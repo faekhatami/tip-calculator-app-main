@@ -205,5 +205,14 @@ form {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 20px;
+        padding: 30px;
+    }
+
+    .result-group {
+        margin: 20px 0;
+    }
+
+    #total-amount,
+    #tip-amount {
+        font-size: 34px;
     }
